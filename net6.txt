@@ -1,0 +1,31 @@
+C:\Users\aptdr\Documents\Projects
+
+configurar variables de entono appseting.json
+
+paquetes a instalar en API
+-Microsoft.AspNetCore.Authentication.JwtBearer
+-Microsoft.EntityFrameworkCore.Tools
+-Newtonsoft.Json
+-Swashbuckle.AspNetCore
+-Swashbuckle.AspNetCore.Swagger
+
+paquetes en vista
+-Microsoft.VisualStudio.Web.CodeGeneration.Desig
+
+Base de datos Conexion
+-Microsoft.Extension.Configuration
+-Microsoft.Extension.Configuration.Json
+-System.Data.SqlClient
+
+Referencia
+-Capa de datos a Capa Entidad
+-Capa de Negocios a Capa de datos y Capa Entidad
+-Capa principal a Capa Negocios y Capa Entidad
+
+Usar Js en cualquier lado ademas de index
+-Ir a Layout en Views-Shared
+<input type="hidden" id="hdfOculto" value="@Url.Content("~")"/>
+---Js
+var raiz = document.getElementById("hdfOculto").value;
+var urlCompleta = window.location.protocol + "//" + window.location.host + "/" + raiz + "TipoMedicamento/ListarTipoMedicamento";
+var res = await fetch(urlCompleta);
